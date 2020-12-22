@@ -37,7 +37,7 @@ const addQuest = async (Id, name, level) => {
     level: level,
     completed: false,
   };
-  adventurier.quest.add(newQuest);
+  adventurier.quest.push(newQuest);
 };
 
 const completeQuest = async (Id, questId) => {
